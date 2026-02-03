@@ -9,7 +9,7 @@ default: clean
 dev: clean
 	$(CC) $(files) $(flags) $(devflags) -o $(bin)
 clean:
-	rm $(bin)
+	rm -rf $(bin)
 
 run: clean default
 	./$(bin)
